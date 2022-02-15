@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>sign uo form</title>
+ <style type="text/css">
+ body{
+  background-image: url(000.jpg);
+    background-repeat: no-repeat;
+   background-size:1364px 700px;
+   color:black;
+   height: 1364px;
+   height: 795px;
+ }
+	
+ div.form{
+  background:linear-gradient(to bottom,#33ccff 0%,#ff99cc 99%);
+
+  border: 5px solid white;
+  text-align: center;
+  width: 500px;
+  padding: 20px;
+  margin: 50px;
+  font-size: 20px;
+ }
+ h1{
+  color: white;
+  font-size: 50px;
+ }
+ a{
+  text-decoration: none;
+  color: green;
+ }
+ a:hover{
+  font-size: 25px;
+  color: black;
+  text-shadow: 2px 3px 4px black;
+ }
+ h1:hover{
+  text-shadow: 2px 3px 4px white;
+  color: darkred;
+  font-size: ;
+ }
+ div.form:hover{
+   box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+
+ }
+	
+
+	
+
+  
+  
+ </style>
+</head>
+<body>
+
+<div class="form">
+ <form action="manjula" method="post">
+  <h1>Sign up Form</h1>
+  <label>FirstName&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+  <input type="text" name="firstname" id="firstname"><br>
+  <br>
+  <label>last name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+  <input type="text" name="lastname" id="lastname"><br><br>
+   <label for="Gender">Gender&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?>value="female">Female
+                <input type="radio" name="gender"<?php if (isset($gender) && $gender=="male") echo "checked";?>  value="male">Male<br>
+                <br>
+  <label>Email&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </label>
+  
+  <input type="text" name="email" id="email"><br><br>
+  <label>Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+  <input type="password" name="password" id="password"><br><br>
+  <label>Conform Password&nbsp&nbsp</label>
+  <input type="password" name=" conformpassword" id="conformpassword"><br><br>
+  
+   <input type="submit" value="Submit">
+  <h3>Already a member?&nbsp&nbsp&nbsp <a href="file:///C:/Users/pc/Desktop/login.html">login</a></h3>
+
+  </form>
+ </div>
+
+</body>
+</html>
+
